@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Fitness Planer</h1>
+            <div id="date"></div>
+            <span>-</span>
+            <div id="clock"></div>
+        </header>
+    </div>
+    <div class="prvi">
+        <h2>Planer vasih vezbi</h2>
+
+        <div>
+            <input type="text" name="" id="tekstPolje" placeholder="Nova vezba/obaveza">
+        </div>
+
+        <div class="radios">
+            <input type="radio" name="dodaj" id="dnP" checked>
+            <label for="">Dodaj na pocetak</label>
+        </div>
+        
+        <div class="radios">
+            <input type="radio" name="dodaj" id="dnK">
+            <label for="">Dodaj na kraj</label>
+        </div>
+
+        <div id="btnContainer">
+            <button id="btn1">Dodaj na listu</button>
+            <button id="btn3">Sacuvaj</button>
+            <button id="btn2">Resetuj</button>
+        </div>
+
+        <div id="container">
+            <ul id="sortlist">
+                <li contenteditable="true">Ovu obavezu mozete prepraviti</li>
+                <li contenteditable="true">Ovu obavezu mozete prepraviti</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="drugi">
+        <div class="innerDivs1">
+            <h2>Stoperica</h2>
+            <div>
+                <input type="text" name="" id="brojPolje" aria-disabled="true" readonly>
+            </div>
+
+            <div>
+                <button class="dugmad" id="start">Pocni/Nastavi</button>
+                <button class="dugmad" id="pause">Pauziraj</button>
+                <button class="dugmad" id="stop">Stopiraj</button>
+            </div>
+        </div>
+    
+        <div class="innerDivs2">
+            <h2>Raspored</h2>
+            <button id="sacuvaj">Sacuvaj</button>
+            <table cellspacing="0">
+                <tr>
+                    <th>Vreme</th>
+                    <th>Ned</th>
+                    <th>Pon</th>
+                    <th>Uto</th>
+                    <th>Sre</th>
+                    <th>Cet</th>
+                    <th>Pet</th>
+                    <th>Sub</th>
+                </tr>
+                <tr>
+                    <td>8h-10h</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                </tr>
+                <tr>
+                    <td>10h-12h</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                </tr>
+                <tr>
+                    <td>12h-14h</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                </tr>
+                <tr>
+                    <td>14h-16h</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                </tr>
+                <tr>
+                    <td>16h+</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                    <td contenteditable="true">uredi</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
